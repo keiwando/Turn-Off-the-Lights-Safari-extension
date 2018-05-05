@@ -2114,7 +2114,8 @@ if(nightonly == true){
 }
 
 // draggable object for the Night Mode feature switch
-if($('stefanvdnighttheme')){
+// CHANGE: Removed this section to prevent the error "TypeError: $ is not a function. (In '$('stefanvdnighttheme')', '$' is undefined)" from showing up in the console on every page
+/*if($('stefanvdnighttheme')){
 if(nmcustom == true){
 var dragobject = { z: 0, x: 0, y: 0, offsetx : null, offsety : null, targetobj : null, dragapproved : 0,
 initialize:function(){
@@ -2167,7 +2168,8 @@ return false;
 
 dragobject.initialize();
 }
-}
+}*/
+//
                                  
 // lamp and night mode active with one click
 if(lampandnightmode == true){
